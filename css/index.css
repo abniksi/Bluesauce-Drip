@@ -31,6 +31,11 @@ body{
 
 #navColor{
   color: #4f729b;
+  font-weight: bold;
+}
+
+#bColor{
+  border-color: #4f729b;
 }
 
 .newNavbar {
@@ -59,6 +64,7 @@ body{
   border-left: 12px solid rgb(176, 228, 234);
   background-image: url("images/leftcontent.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
 }
@@ -188,7 +194,7 @@ body{
 
 .featuredProducts{
   text-align: center;
-  margin: 30px 0px;
+  margin: 50px 0px;
   color: #4f729b;
 }
 
@@ -206,8 +212,27 @@ body{
   transform: scale(1.05);
 }
 
+#emailContainer{
+  width: 475px;
+  height: 425px;
+  max-width: 580px;
+  background-color: rgb(176, 228, 234);
+  transform: skewY(-12.5deg);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  flex-direction: column;
+}
+
+#emailContainer p {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
 #connect{
-  background-image: linear-gradient(to bottom, #ffffff, #4f729b);
+  background-color: #4f729b;
   height: 300px;
   width: 100%;
   display: flex;
@@ -223,11 +248,11 @@ body{
   font-size: 35px;
   padding: 5px;
   transition: 0.5s ease;
+  color: rgb(176, 228, 234);
 }
 
 #icons li:hover{
     transform: scale(1.2);
-    color: rgb(176, 228, 234);
 }
 
 #icons ul{
@@ -239,16 +264,28 @@ body{
 
 #footerButton{
   border: none;
-  height: 40px;
+  height: 50px;
   width: 200px;
   border-radius: 50px;
-  background-color: rgb(176, 228, 234);
+  background-color: #4f729b;
   transition: 0.5s ease;
   color: white;
+  font-size: 20px;
 }
 
 #footerButton:hover{
   background-color: #4f729b;
   transform: scale(1.1);
   box-shadow: 0px 0px 10px 0px black;
+}
+
+@media only screen and (max-width: 600px) {
+  #emailContainer{
+    transform: skewY(0deg);
+    width: 100%;
+  }
+
+  .collectionWords{
+    font-size: 20px;
+  }
 }

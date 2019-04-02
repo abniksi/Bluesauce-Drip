@@ -12,7 +12,7 @@
   <body>
     <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-light">
       <a id="navColor" class="navbar-brand" href="#">Bluesauce Drip</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="bColor" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,7 +31,7 @@
       <div class="container">
         <h1 class="display-4">Welcome to Bluesauce Drip</h1>
         <p class="lead">We have the drip you need.</p>
-        <button type="button" name="button">Learn More</button>
+        <a href="about.html"><button type="button" name="button">Learn More</button></a>
       </div>
     </div>
 
@@ -39,7 +39,7 @@
       <div id="leftPanel">
         <div id="leftPanelContent">
           <div id="leftPanelWords">
-            <h1>Street Collection<br></h1>
+            <h1 class="collectionWords">Street Collection<br></h1>
           </div>
         </div>
       </div>
@@ -47,14 +47,14 @@
         <div id="topRight">
           <div id="topRightPanelContent">
             <div id="topRightPanelWords">
-              <h1>Fashion Collection<br></h1>
+              <h1 class="collectionWords">Fashion Collection<br></h1>
             </div>
           </div>
         </div>
         <div id="bottomRight">
           <div id="bottomRightPanelContent">
             <div id="bottomRightPanelWords">
-              <h1>Campus Collection<br></h1>
+              <h1 class="collectionWords">Campus Collection<br></h1>
             </div>
           </div>
         </div>
@@ -107,11 +107,21 @@
       </div>
     </div>
 
+    <div id="emailSkew">
+      <div id="emailContainer">
+        <p>Want a custom design?</p>
+        <p>Email us!<p>
+        <button id="footerButton" type="button" name="button">Email</button>
+      </div>
+    </div>
+
+    <div class="x">
+
+    </div>
+
     <footer>
       <div id="connect">
         <h1>Connect With Us!</h1>
-        <h2>Custom design? Email us!</h2>
-        <button id="footerButton" type="button" name="button">Email</button>
         <div id="icons">
           <ul>
             <li><i class="fab fa-facebook"></i></li>
@@ -121,6 +131,7 @@
             <li><i class="fab fa-youtube"></i></li>
           </ul>
         </div>
+        <p>&copy; 2019. Bluesauce Drop LLC. All Rights Reserved.</p>
       </div>
     </footer>
 
