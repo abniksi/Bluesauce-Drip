@@ -19,6 +19,10 @@
   transition: 1s all;
 }
 
+#bColor{
+  border-color: #4f729b;
+}
+
 .information{
   width: 80%;
   margin: 0 auto;
@@ -27,14 +31,20 @@
 }
 
 #connect{
-  background-image: linear-gradient(to bottom, #ffffff, #4f729b);
-  height: 300px;
+  background-color: #4f729b;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
+  margin-top: 52px;
+}
+
+#connect h1{
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 #icons li{
@@ -43,11 +53,11 @@
   font-size: 35px;
   padding: 5px;
   transition: 0.5s ease;
+  color: rgb(176, 228, 234);
 }
 
 #icons li:hover{
     transform: scale(1.2);
-    color: rgb(176, 228, 234);
 }
 
 #icons ul{
@@ -57,18 +67,37 @@
   color: #4f729b;
 }
 
+li a{
+  text-decoration: none;
+      color: rgb(176, 228, 234);
+}
+
+li a:hover{
+  color: rgb(176, 228, 234);
+}
+
 #footerButton{
   border: none;
-  height: 40px;
+  height: 50px;
   width: 200px;
   border-radius: 50px;
-  background-color: rgb(176, 228, 234);
+  background-color: #4f729b;
   transition: 0.5s ease;
   color: white;
+  font-size: 20px;
 }
 
 #footerButton:hover{
   background-color: #4f729b;
   transform: scale(1.1);
   box-shadow: 0px 0px 10px 0px black;
+}
+
+#logo{
+  height: 75px;
+}
+
+#footerLogo{
+  height: 100px;
+  margin-bottom: 20px;
 }

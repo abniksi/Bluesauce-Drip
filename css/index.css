@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
-
 body{
   font-family: 'Karla', sans-serif;
 }
@@ -31,17 +30,15 @@ body{
 
 #logo{
   height: 75px;
-  background-position: center;
 }
 
 #footerLogo{
   height: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #navColor{
   color: #4f729b;
-  font-weight: bold;
 }
 
 #bColor{
@@ -250,6 +247,7 @@ body{
   justify-content: center;
   flex-direction: column;
   color: white;
+  margin-top: 52px;
 }
 
 #connect h1{
@@ -277,6 +275,15 @@ body{
   color: #4f729b;
 }
 
+li a{
+  text-decoration: none;
+      color: rgb(176, 228, 234);
+}
+
+li a:hover{
+  color: rgb(176, 228, 234);
+}
+
 #footerButton{
   border: none;
   height: 50px;
@@ -302,5 +309,9 @@ body{
 
   .collectionWords{
     font-size: 20px;
+  }
+
+  #connect{
+    margin-top: 0;
   }
 }
