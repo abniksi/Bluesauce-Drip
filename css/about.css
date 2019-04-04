@@ -3,14 +3,34 @@
   display: flex;
   align-items: center;
   text-align: center;
-  background: url("images/mainimage.jpg") no-repeat center center fixed;
+  background: url("images/leftcontent.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-shadow: 1px 1px 1px black;
 }
 
-#navColor{
+#navWhiteColor{
+  position: relative;
   color: #4f729b;
+}
+
+#navWhiteColor:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#navWhiteColor:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
 }
 
 .newNavbar {
@@ -24,7 +44,7 @@
 }
 
 .information{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   font-size: 20px;

@@ -37,8 +37,28 @@ body{
   margin-bottom: 20px;
 }
 
-#navColor{
+#navWhiteColor{
+  position: relative;
   color: #4f729b;
+}
+
+#navWhiteColor:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#navWhiteColor:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
 }
 
 #bColor{
@@ -50,6 +70,7 @@ body{
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
   transition: 1s all;
 }
+
 
 #main{
   width: 90%;
