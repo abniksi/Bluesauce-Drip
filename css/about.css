@@ -50,6 +50,35 @@
   font-size: 20px;
 }
 
+.information h1:after{
+  display: block;
+  height: 2px;
+  background-color: #4f729b;
+  content: ' ';
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.artwork {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-bottom: -55px;
+}
+
+.artwork img{
+  width: 100%;
+}
+
+.information img{
+  height: 400px;
+  width: auto;
+}
+
 #connect{
   background-color: #4f729b;
   height: 100%;
